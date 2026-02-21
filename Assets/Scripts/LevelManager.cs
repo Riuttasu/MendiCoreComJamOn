@@ -5,7 +5,7 @@ public class LevelManager : MonoBehaviour
 {
     void Awake()
     {
-
+        DontDestroyOnLoad(this.gameObject);
     }
     // Travel UI
     // Load a given scene
