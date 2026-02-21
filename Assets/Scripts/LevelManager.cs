@@ -3,10 +3,6 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
     // Travel UI
     // Load a given scene
     public void LoadScene(string scene)
@@ -17,6 +13,7 @@ public class LevelManager : MonoBehaviour
     public void StartGame()
     {
 
+        SceneManager.LoadScene("Fuera");
     }
     // Return to game menu
     public void MainMenu()
