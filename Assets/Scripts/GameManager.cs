@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -36,5 +37,15 @@ public class GameManager : MonoBehaviour
         ganarCuerda.Invoke(stringnum);
         // Coins
         ganarMoneda.Invoke(coinnum);
+    }
+    public void GainObject(string obj)
+    {
+        switch(obj)
+        {
+            case "String": stringnum++; break;
+            case "Coin": coinnum++; break;
+            default: Debug.LogWarning("Unknown object"); break;
+        }
+        UpdateGUI();
     }
 }
