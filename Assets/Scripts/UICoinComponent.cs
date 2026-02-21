@@ -7,15 +7,12 @@ public class UICoinComponent : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameManager.instance.ganarMoneda.AddListener(UpdateUI);
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.ganarMoneda.AddListener(UpdateUI);
+            UpdateUI(GameManager.instance.GetCount("Coin"));
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    // 
     private void UpdateUI(int numcoins)
     {
         if (coins.Length != 0)

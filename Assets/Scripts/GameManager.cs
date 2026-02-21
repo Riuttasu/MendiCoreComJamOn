@@ -7,13 +7,6 @@ public class GameManager : MonoBehaviour
 {
     // Instance
     public static GameManager instance;
-    // Collectables
-    // Strings
-    [SerializeField] 
-    private GameObject[] strings;
-    // Coins    
-    [SerializeField]
-    private GameObject[] coins;
     // Collectable data
     private int stringnum = 0; private int coinnum = 0;
 
@@ -29,7 +22,6 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         UpdateGUI();
     }
-
     private void UpdateGUI()
     {
         // Collectables
@@ -47,5 +39,14 @@ public class GameManager : MonoBehaviour
             default: Debug.LogWarning("Unknown object"); break;
         }
         UpdateGUI();
+    }
+    public int GetCount(string obj)
+    {
+        switch (obj)
+        {
+            case "String": return stringnum;
+            case "Coin": return coinnum;
+            default: Debug.LogWarning("No object with that name to return value"); return -1; 
+        }
     }
 }

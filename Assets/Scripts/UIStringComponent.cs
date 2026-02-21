@@ -7,15 +7,12 @@ public class UIStringComponent : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameManager.instance.ganarCuerda.AddListener(UpdateUI);
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.ganarCuerda.AddListener(UpdateUI);
+            UpdateUI(GameManager.instance.GetCount("String"));
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    // 
     private void UpdateUI(int numstrings)
     {
         if (strings.Length != 0)
