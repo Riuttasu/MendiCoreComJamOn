@@ -274,13 +274,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466932073}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.013874852, w: 0.99990374}
-  m_LocalPosition: {x: 8.36, y: 0.97, z: 0}
-  m_LocalScale: {x: -1.0063, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.041320406, w: 0.999146}
+  m_LocalPosition: {x: 7.39, y: 0.47, z: 0}
+  m_LocalScale: {x: -0.83120376, y: 0.8248, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.59}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.736}
 --- !u!1001 &481912621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -495,6 +495,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1566651008}
+    - target: {fileID: 4063532376014223340, guid: 5358919e7c4f2a44a8d12a69cfb15ee9, type: 3}
+      propertyPath: m_text
+      value: Moverse
+      objectReference: {fileID: 0}
     - target: {fileID: 6392652336979215978, guid: 5358919e7c4f2a44a8d12a69cfb15ee9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
