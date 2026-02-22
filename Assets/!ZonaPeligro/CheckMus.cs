@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckMus : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class CheckMus : MonoBehaviour
         {
             if (GameManager.instance.HasMus())
             {
-                activateobj.SetActive(true);
+
+                string objID = SceneManager.GetActiveScene().name + "_" + activateobj;
+                if (GameManager.instance != null) if (!GameManager.instance.collectedItems.Contains(objID)) activateobj.SetActive(true);
             }
         }
     }

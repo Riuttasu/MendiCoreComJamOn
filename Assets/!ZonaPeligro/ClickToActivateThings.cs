@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickToActivateThings : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class ClickToActivateThings : MonoBehaviour
     {
         foreach(GameObject obj in objs)
         {
-            obj.SetActive(true);
+            string objID = SceneManager.GetActiveScene().name + "_" + obj;
+            if (GameManager.instance != null) if (!GameManager.instance.collectedItems.Contains(objID)) obj.SetActive(true);
         }
     }
 }
