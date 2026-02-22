@@ -268,6 +268,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueWindow: {fileID: 432627647}
   dialogueData: {fileID: 0}
+  dialogueLines: []
+  spriteSpace: {fileID: 0}
+  npcSprites: []
 --- !u!1001 &389085448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -479,6 +482,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueWindow: {fileID: 952130025}
   dialogueData: {fileID: 0}
+  dialogueLines: []
+  spriteSpace: {fileID: 0}
+  npcSprites: []
 --- !u!1 &556100932
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,13 +596,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 590658350078829986, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7964461215143991268, guid: ca404d831efb6c54eb82e1d61c0f8413, type: 3}
     - target: {fileID: 636665812636350979, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas_Napochoco
       objectReference: {fileID: 0}
     - target: {fileID: 2005657116265722543, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_text
-      value: Napochoco
+      value: Napochco
       objectReference: {fileID: 0}
     - target: {fileID: 2914505123140055339, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_AnchorMax.y
@@ -709,6 +719,11 @@ PrefabInstance:
     - target: {fileID: 7590968213223800003, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040433313491604834, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
+      propertyPath: m_text
+      value: "Hoal, chikibeibi\r\nQu\xE9 te trae por ac\xE1?\r\nQuieres zumo de uva
+        \nDisfruta que la vida son tres d\xEDas"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -891,7 +906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2005657116265722543, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_text
-      value: Mus Adikt
+      value: MUS ADIKT
       objectReference: {fileID: 0}
     - target: {fileID: 2914505123140055339, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1012,6 +1027,11 @@ PrefabInstance:
     - target: {fileID: 7590968213223800003, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040433313491604834, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
+      propertyPath: m_text
+      value: "Boff, qu\xE9 ganas del torneo de Mus.\r\nAmo el Mus. Amo el Mus. Amo
+        el Mus. Amo el Mus.\r\nAmo el MUS. AMO el MUS. AMO EL MUS. AMO EL MUSSS!!\r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -6,6 +6,12 @@ public class OpenDialogue : MonoBehaviour
     private GameObject dialogueWindow;
     [SerializeField]
     private AdvancedDialogues dialogueData;
+    private bool isDialogueOpen = false;
+    public string[] dialogueLines;
+    [SerializeField]
+    private GameObject spriteSpace;
+    [SerializeField]
+    private Sprite[] npcSprites;
 
     void Start()
     {
@@ -37,14 +43,19 @@ public class OpenDialogue : MonoBehaviour
         if (hit == null) return;
 
         // Only open if the clicked collider belongs to this GameObject (or its child/parent)
-        if (hit.transform == transform || hit.transform.IsChildOf(transform) || transform.IsChildOf(hit.transform))
+        if (!isDialogueOpen)
         {
-            dialogueWindow.SetActive(true);
-            DialogueManager.Instance.dialogueStarted = true;
-            if(DialogueManager.Instance != null)
+            if (hit.transform == transform || hit.transform.IsChildOf(transform) || transform.IsChildOf(hit.transform))
             {
-                DialogueManager.Instance.RequestDialogue(dialogueData);
+                dialogueWindow.SetActive(true);
+                isDialogueOpen = true;
             }
+        }
+        else
+        {
+            dialogueWindow.SetActive(false);
+            isDialogueOpen = false;
         }
     }
 }
+

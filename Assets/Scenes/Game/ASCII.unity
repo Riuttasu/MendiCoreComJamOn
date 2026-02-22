@@ -448,6 +448,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueWindow: {fileID: 324100803}
   dialogueData: {fileID: 0}
+  dialogueLines: []
+  spriteSpace: {fileID: 0}
+  npcSprites: []
 --- !u!1001 &554451710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -917,9 +920,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 590658350078829986, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1566704488852473137, guid: d4ad79584ac6b414fae8bbf0a8c8eaa9, type: 3}
     - target: {fileID: 636665812636350979, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005657116265722543, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
+      propertyPath: m_text
+      value: EDU
       objectReference: {fileID: 0}
     - target: {fileID: 2914505123140055339, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1032,6 +1043,11 @@ PrefabInstance:
     - target: {fileID: 7590968213223800003, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040433313491604834, guid: a2c79852e7418b44a924bbabf8322472, type: 3}
+      propertyPath: m_text
+      value: "Hola!\nTe vas a apuntar a los Edus de Marzo?\nY qu\xE9 te parece jugar
+        un Unmatched?\nNi se te ocurra jugar al Cat\xE1n aqu\xED"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
