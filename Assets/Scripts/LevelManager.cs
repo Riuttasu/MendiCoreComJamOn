@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Fuera");
+        if (SoundManager.instance!= null) { SoundManager.instance.ChangeMusic("Game"); }
     }
     // Return to game menu
     public void MainMenu()
@@ -32,5 +33,9 @@ public class LevelManager : MonoBehaviour
     public void EndGame()
     {
         SceneManager.LoadScene("EndGame");
+        if (SoundManager.instance != null)
+        {
+            SoundManager.instance.ChangeMusic("EndGame");
+        }
     }
 }

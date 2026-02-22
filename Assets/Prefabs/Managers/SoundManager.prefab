@@ -48,8 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSrc: {fileID: 8830706798743701345}
   sfxSrc: {fileID: 4390721540452729170}
-  gamemusic: {fileID: 8300000, guid: a754ec4e95c573440a071978ac339ca8, type: 3}
-  endmusic: {fileID: 8300000, guid: a754ec4e95c573440a071978ac339ca8, type: 3}
+  gamemusic: {fileID: 8300000, guid: 2c1d8593ae8f8074bb248a7491d962b5, type: 3}
+  endmusic: {fileID: 8300000, guid: a4c8f0e53fc261148bb33af3064b70ae, type: 3}
+  startmusic: {fileID: 8300000, guid: 5707a3cce886b204993cfd6f0eaf45c7, type: 3}
   sfxclip: {fileID: 8300000, guid: 9fb834d9c0ecec743b0af1d311f80b53, type: 3}
   pickup: {fileID: 8300000, guid: 9fb834d9c0ecec743b0af1d311f80b53, type: 3}
 --- !u!82 &8830706798743701345

@@ -15,6 +15,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private AudioClip endmusic;
     [SerializeField]
+    private AudioClip startmusic;
+    [SerializeField]
     private AudioClip sfxclip;
     [SerializeField]
     private AudioClip pickup;
@@ -31,7 +33,7 @@ public class SoundManager : MonoBehaviour
                 // Only start if it's not already playing (prevents double-play)
                 if (!musicSrc.isPlaying)
                 {
-                    musicSrc.clip = gamemusic;
+                    musicSrc.clip = startmusic;
                     musicSrc.loop = true;
                     musicSrc.Play();
                 }
@@ -55,6 +57,7 @@ public class SoundManager : MonoBehaviour
         {
             case "Game": newmusic = gamemusic;  break;
             case "EndGame": newmusic = endmusic; break;
+            case "Start": newmusic = startmusic; break;
             default: Debug.LogWarning("No music associated with that name"); break;
         }
         musicSrc.clip = newmusic;
