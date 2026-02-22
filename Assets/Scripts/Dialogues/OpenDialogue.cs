@@ -4,6 +4,8 @@ public class OpenDialogue : MonoBehaviour
 {
     [SerializeField]
     private GameObject dialogueWindow;
+    [SerializeField]
+    private AdvancedDialogues dialogueData;
 
     void Start()
     {
@@ -38,6 +40,11 @@ public class OpenDialogue : MonoBehaviour
         if (hit.transform == transform || hit.transform.IsChildOf(transform) || transform.IsChildOf(hit.transform))
         {
             dialogueWindow.SetActive(true);
+            DialogueManager.Instance.dialogueStarted = true;
+            if(DialogueManager.Instance != null)
+            {
+                DialogueManager.Instance.RequestDialogue(dialogueData);
+            }
         }
     }
 }

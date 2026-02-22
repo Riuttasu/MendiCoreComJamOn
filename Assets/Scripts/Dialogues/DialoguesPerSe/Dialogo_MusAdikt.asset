@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818859423f01b143ad208c1eacb3704, type: 3}
+  m_Name: Dialogo_MusAdikt
+  m_EditorClassIdentifier: 
+  npcs:
+  - {fileID: 11400000, guid: ff44f23b4442d0c4ab11a8b94c9b70cb, type: 2}
+  dialogues:
+  - "Boff, qu\xE9 ganas del torneo de Mus."
+  - Amo el Mus. Amo el Mus. Amo el Mus. Amo el Mus.
+  - Amo el MUS. AMO el MUS. AMO EL MUS. AMO EL MUSSS!!
+  - "Hace un rato pill\xE9 el Mus en ASCII, aunque ya lo devolv\xED."
+  - "Se me hizo raro porque le vi algo de m\xE1s."
+  - "Y eso que me s\xE9 la caja de pe a pa."
+  optionText: []
+  option0: {fileID: 0}
+  option1: {fileID: 0}
+  option2: {fileID: 0}
+  option3: {fileID: 0}
