@@ -25,6 +25,7 @@ public class TravelUI : MonoBehaviour
             case "LAG": ActivateButtons(3); break;
             case "ASCII": ActivateButtons(3); break;
             case "Toni": ActivateButtons(3); break;
+            case "Basura": ActivateButtons(3); break;
             case "TestTravel": ActivateButtons(0, 1, 2, 5, 6); break;
             default: Debug.LogError("Escena no encontrada en base de travel");  break;
         }

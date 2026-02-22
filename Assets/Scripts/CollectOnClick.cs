@@ -24,7 +24,10 @@ public class CollectOnClick : MonoBehaviour
         {
             GameManager.instance.GainObject(obj);
         }
-
+        if (SoundManager.instance != null)
+        {
+            SoundManager.instance.PlaySound("Pickup");
+        }
         gameObject.SetActive(false);
     }
 }
