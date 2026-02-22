@@ -3,7 +3,8 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
-    // Travel UI
+    // Instance
+    public static LevelManager instance;
     // Load a given scene
     public void LoadScene(string scene)
     {
@@ -12,7 +13,6 @@ public class LevelManager : MonoBehaviour
     // Start Game - Cutscene
     public void StartGame()
     {
-
         SceneManager.LoadScene("Fuera");
     }
     // Return to game menu
