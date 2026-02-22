@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/ASCII.unity
     guid: ed3a52769009edd4cbc20424ab4d7534
+  - enabled: 1
+    path: Assets/Scenes/Minigame/Basura.unity
+    guid: 7f2beb8470498294da2f6127d2cc1d8f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
