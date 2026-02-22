@@ -16,12 +16,15 @@ public class TravelUI : MonoBehaviour
         }
         // Mira la escena y activa los correctos
         string currentscene = SceneManager.GetActiveScene().name;
-        switch(currentscene)
+        switch (currentscene)
         {
             case "Fuera": ActivateButtons(1); break;
-            case "Cafeta": ActivateButtons(0,2,3); break;
+            case "Cafeta": ActivateButtons(0, 2, 3); break;
             case "Hall": ActivateButtons(1); break;
-            case "Roca": ActivateButtons(1,4,5); break;
+            case "Roca":
+                if (GameManager.instance.GetCount("String") == 5) { ActivateButtons(1, 4, 5, 6); }
+                else { ActivateButtons(1, 4, 5); }; 
+                break;
             case "LAG": ActivateButtons(3); break;
             case "ASCII": ActivateButtons(3); break;
             case "Toni": ActivateButtons(3); break;

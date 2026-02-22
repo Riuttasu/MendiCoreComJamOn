@@ -57,4 +57,9 @@ public class GameManager : MonoBehaviour
             default: Debug.LogWarning("No object with that name to return value"); return -1; 
         }
     }
+    public void RemoveCoin()
+    {
+        coinnum = 0;
+        UpdateGUI();
+    }
 }
