@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -9,10 +11,11 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     // Collectable data
     private int stringnum = 0; private int coinnum = 0;
-
+    // List of collected items
+    public List<string> collectedItems = new List<string>();
+    // Eventos para la UI
     public UnityEvent<int> ganarCuerda;
     public UnityEvent<int> ganarMoneda;
-
     // Conditions
     private bool Mus = false;
     private void Awake()
@@ -32,7 +35,12 @@ public class GameManager : MonoBehaviour
     }
     public void GainObject(string obj)
     {
-        switch(obj)
+        string objID = SceneManager.GetActiveScene().name + "_" + obj;
+        if (!collectedItems.Contains(objID))
+        {
+            collectedItems.Add(objID);
+        }
+        switch (obj)
         {
             case "String": stringnum++; break;
             case "Coin": coinnum++; break;
