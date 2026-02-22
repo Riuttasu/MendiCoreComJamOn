@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
         // Coins
         ganarMoneda.Invoke(coinnum);
     }
+    public void GiveMus()
+    { Mus = true; }
     public void GainObject(string obj)
     {
         string objID = SceneManager.GetActiveScene().name + "_" + obj;
