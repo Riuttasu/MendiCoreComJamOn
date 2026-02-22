@@ -5,7 +5,6 @@ public class LevelManager : MonoBehaviour
 {
     // Instance
     public static LevelManager instance;
-    // Load a given scene
     private void Awake()
     {
         if (instance != null) { Destroy(this); }
