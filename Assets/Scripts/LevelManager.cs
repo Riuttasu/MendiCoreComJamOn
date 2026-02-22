@@ -28,4 +28,9 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    // Plays the end scene
+    public void EndGame()
+    {
+        SceneManager.LoadScene("EndGame");
+    }
 }
