@@ -13,7 +13,7 @@ public class CheckCoins : MonoBehaviour
         if (!hascoin) { activatedobj.SetActive(false); }
         else { if (GameManager.instance != null) if (!GameManager.instance.collectedItems.Contains(objID)) activatedobj.SetActive(true); }
     }
-    private void CheckCoin()
+    private void OnMouseDown()
     {
 
         string objID = SceneManager.GetActiveScene().name + "_" + activatedobj;
@@ -23,7 +23,7 @@ public class CheckCoins : MonoBehaviour
             {
                 GameManager.instance.RemoveCoin();
                 hascoin = true;
-                if (GameManager.instance != null) if (!GameManager.instance.collectedItems.Contains(objID))  activatedobj.SetActive(true);
+               if (!GameManager.instance.collectedItems.Contains(objID))  activatedobj.SetActive(true);
             }
         }
     }

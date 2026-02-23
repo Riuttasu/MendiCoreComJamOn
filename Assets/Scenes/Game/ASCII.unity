@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 466932074}
   - component: {fileID: 466932076}
   - component: {fileID: 466932077}
+  - component: {fileID: 466932078}
   m_Layer: 0
   m_Name: Edu
   m_TagString: Untagged
@@ -451,6 +452,19 @@ MonoBehaviour:
   dialogueLines: []
   spriteSpace: {fileID: 0}
   npcSprites: []
+--- !u!114 &466932078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466932073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bb7903f02c85b469b081c6dcd53933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateobj: {fileID: 1479594041}
 --- !u!1001 &554451710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -560,11 +574,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: CollectableString
       objectReference: {fileID: 0}
+    - target: {fileID: 9145962731432195941, guid: 8c115851f312f8a42958bf900041a70b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c115851f312f8a42958bf900041a70b, type: 3}
+--- !u!1 &1479594041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9145962731432195941, guid: 8c115851f312f8a42958bf900041a70b, type: 3}
+  m_PrefabInstance: {fileID: 1479594040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1566651007
 PrefabInstance:
   m_ObjectHideFlags: 0
